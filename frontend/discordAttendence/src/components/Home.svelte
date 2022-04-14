@@ -1,19 +1,18 @@
 <script>
+  // import App from '../App.svelte';
+  // import Login from './Login.svelte';
+  // import { getContext } from "svelte";
 
-import App from '../App.svelte';
-import Login from './Login.svelte';
-import { getContext } from "svelte";
+  // let Chat_ID = getContext('ChatID');
 
-let Chat_ID = getContext('ChatID');
+  // export let discord_server;
+  // export let server_nickname;
+  // export let specific_channel;
+  // export let channel_nickname;
+  // export let discord_user;
+  // export let user_nickname;
 
-export let discord_server;
-export let server_nickname;
-export let specific_channel;
-export let channel_nickname;
-export let discord_user;
-export let user_nickname;
-
-/*
+  /*
 async function createTable () {
   let table= '';
   let rows = 2;
@@ -28,37 +27,36 @@ async function createTable () {
 document.write('<table color:white>' + table + '</table>')
 }*/
 
-let tableData = [
-        {Number:1, Type: "Discord-Channel", Name: "124324234445", Nickname: "Hans"},
-        {Number:2, Type: "User-Name", Name: "123131232342", Nickname: "Peter"},
-        {Number:3, Type: "User-Name", Name: "123123123234", Nickname: "Maier"},
-        {Number:4, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
-        {Number:5, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
-        {Number:6, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
-        {Number:8, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
-        {Number:9, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
-        {Number:10, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
-        {Number:11, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},       
-        {Number:12, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"}
-]
+  // let tableData = [
+  //         {Number:1, Type: "Discord-Channel", Name: "124324234445", Nickname: "Hans"},
+  //         {Number:2, Type: "User-Name", Name: "123131232342", Nickname: "Peter"},
+  //         {Number:3, Type: "User-Name", Name: "123123123234", Nickname: "Maier"},
+  //         {Number:4, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
+  //         {Number:5, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
+  //         {Number:6, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
+  //         {Number:8, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
+  //         {Number:9, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
+  //         {Number:10, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
+  //         {Number:11, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"},
+  //         {Number:12, Type: "Discord-Channel", Name: "12312313213", Nickname: "Günther"}
+  // ]
 
-let entry = document.getElementsByName("entry");
+  // let entry = document.getElementsByName("entry");
 
-function addTableRow() {
-  let type = "TEST";
+  // function addTableRow() {
+  //   let type = "TEST";
 
-  let tabelle = document.getElementById("tabelle");
+  //   let tabelle = document.getElementById("tabelle");
 
-  let newRow = tabelle.insertAdjacentHTML(1,type);
-  let cell1 = newRow.insertAdjacentHTML(0,"Test");
-  let cell2 = newRow.insertAdjacentHTML(1,"asdasdad");
+  //   let newRow = tabelle.insertAdjacentHTML(1,type);
+  //   let cell1 = newRow.insertAdjacentHTML(0,"Test");
+  //   let cell2 = newRow.insertAdjacentHTML(1,"asdasdad");
 
-  cell1.innerHTML = type;
-}
-
+  //   cell1.innerHTML = type;
+  // }
 </script>
 
-<body class="body2">
+<!-- <body class="body2">
 <h1><b>Add to List of Notifications for: </b></h1>
 
 <form class="formular">
@@ -71,9 +69,9 @@ function addTableRow() {
   <div class="grid-item"><label for="specific_channel">specific channel:</label></div>
   <div class="grid-item"><input id="specific_channel" tpye="text" name="specific_channel" value="" placeholder="channel-id"></div>
   <div class="grid-item"><input id="channel" tpye="text" name="channel_nickname" value="" placeholder="channel-nickname"></div>
-  <div class="grid-item"><label for="discord_user">discord user:</label></div>
-  <!--<div class="grid-item"><input id="discord_user" tpye="text" name="discord_user" value="" placeholder="user-id" required></div>-->
-  <div class="grid-item"><input id="discord_user" tpye="text" name="discord_user" value="" placeholder="user-id"></div>
+  <div class="grid-item"><label for="discord_user">discord user:</label></div> -->
+<!--<div class="grid-item"><input id="discord_user" tpye="text" name="discord_user" value="" placeholder="user-id" required></div>-->
+<!-- <div class="grid-item"><input id="discord_user" tpye="text" name="discord_user" value="" placeholder="user-id"></div>
   <div class="grid-item"><input id="user_nickname" tpye="text" name="user_nickname" value="" placeholder="user-nickname"></div>
 </div>
 
@@ -81,7 +79,7 @@ function addTableRow() {
   <button class="button1" type="submit">Submit</button>
   <button class="button3">Update</button> 
   <button class="button2" type="reset">Reset</button>
-</div>
+</div> -->
 
 <!--
   <button class="button2" name="entry" on:click={() => addTableRow()}>Anzeigen</button>
@@ -100,8 +98,7 @@ function addTableRow() {
 </table>
 -->
 
-
-<div class="tabellendiv">
+<!-- <div class="tabellendiv">
   <table>
   <thead>
     <tr>
@@ -120,25 +117,19 @@ function addTableRow() {
   {/each}
   </tbody>
 </table>
-</div>
+</div> -->
 
-
-
-
+<!-- 
 </form>
-</body>
-
-
+</body> -->
 <style>
-
-table {
+  /* table {
       border: 3px solid;
       border-color:rgb(180, 72, 159);
       margin-top: 8%;
       margin-left: 8px;
       color: white;
       width: 100%;
-      /*padding: 2px;*/
       margin-bottom: 1%;
       border-collapse:collapse;
     }
@@ -252,7 +243,5 @@ label {
   margin-top: 5%;
   padding-bottom: 5%;
   margin-left: 13%;
-}
-
+} */
 </style>
-  
